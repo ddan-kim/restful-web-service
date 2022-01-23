@@ -33,7 +33,7 @@ public class User {
     private String password;
     private String ssn;
 
-    public static final SimpleBeanPropertyFilter userInfo() {
+    public static SimpleBeanPropertyFilter userInfo() {
         return SimpleBeanPropertyFilter.filterOutAllExcept("id","name","joinDate", "ssn");
     }
 
