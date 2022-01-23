@@ -18,7 +18,7 @@ import static com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter.f
 @AllArgsConstructor
 @NoArgsConstructor
 //@JsonIgnoreProperties(value = {"password", "ssn"}) // 해당 속성을 class 단위에서 제어
-@JsonFilter("UserInfo")
+//@JsonFilter("UserInfo")
 public class User {
 
     private Integer id;
