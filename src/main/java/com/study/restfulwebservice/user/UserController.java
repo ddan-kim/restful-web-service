@@ -35,7 +35,7 @@ public class UserController {
             throw new UserNotFoundException(String.format("ID[%s] not find", id));
         }
 
-        //HATEOAS
+        //HATEOAS 전체 사용자 목록 uri 링크를 추가
         Resource<User> resource = new Resource<>(user);
         ControllerLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
         resource.add(linkTo.withRel("all-users"));
