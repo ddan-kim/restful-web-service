@@ -32,7 +32,7 @@ public class AdminUserController {
         return mapping;
     }
 
-    /*
+    /**
     * API 버전 관리
     *
     * URI를 통한 관리
